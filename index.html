@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Javscript Calculator</title>
+		<!-------Font-->
+	    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Raleway:wght@400;600;700;900&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+	    <!----FontAwesome-->
+	    <script src="https://kit.fontawesome.com/11a407998c.js" crossorigin="anonymous"></script>
+	    <!-------CSS-------->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header class="bg-primary">
+			<div class="container text-center py-2">
+				<div class="col-12">
+					<h2 class="title">Calculate Your Value in a click</h2>
+					<p class="riaj">This project is Design & Develop by <span> MD RIAJ KHAN</span></p>
+					<p class="riaj">Special Thanks To Xayed & Abu Raihan</p>
+				</div>
+			</div>
+		</header>
+
+		<section class="Calculator">
+			<div class="container py-4 text-center">
+				<div class="row">
+					<div class="InputValue col-md-6">
+						<h2 class="valueTitle pb-4">Input Your value Here</h2>
+						
+							<label>First Number</label>
+							<input id="Num1" placeholder="Enter Number" type="number" name="Num1"><br>
+							<label>Second Number</label>
+							<input id="Num2" placeholder="Enter Number" type="number" name="Num2"><br>
+							<h2 class="Method valueTitle pb-4 mt-2">Choose Your Method And See the result</h2>
+
+							<div class="Allbtn">
+								<button onclick="sum()"><i class="fas fa-plus pr-2"></i>SUM</button>
+								<button onclick="sub()"><i class="fas fa-minus pr-2"></i>SUB</button>
+								<button onclick="multiply()"><i class="fas fa-times pr-2"></i>MULTIPLY</button>
+								<button onclick="divided()"><i class="fas fa-divide pr-2"></i>DIVIDED</button>
+							</div>
+						
+					</div>
+					<div class="col-md-6">
+						<h2 class="YourResult valueTitle pb-3">Your Result</h2>
+						<div class="row">
+							<div class="col-md-6">
+								<p class="result">SUM Is: <span id="resultSum"></span></p>
+							</div>
+							<div class="col-md-6">
+								<p class="result">Multiply Is: <span id="resultMulty"></span></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p class="result">SUB Is: <span id="resultSub"></span></p>
+							</div>
+							<div class="col-md-6">
+								<p class="result">DIVIDED Is: <span id="resultDivid"></span></p>
+							</div>
+						</div>
+						<button onclick="clr()">Clear All</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		<!--------Javascript------------>
+    	<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<script>
+			function sum(){
+				let x=document.getElementById('Num1').value;
+				let y=document.getElementById('Num2').value;
+
+				document.getElementById('resultSum').innerHTML=parseInt(x)+parseInt(y);
+			}
+
+			function sub(){
+				let x=document.getElementById('Num1').value;
+				let y=document.getElementById('Num2').value;
+
+				document.getElementById('resultSub').innerHTML=parseInt(x)-parseInt(y);
+			}
+
+			function multiply(){
+				let x=document.getElementById('Num1').value;
+				let y=document.getElementById('Num2').value;
+
+				document.getElementById('resultMulty').innerHTML=parseInt(x)*parseInt(y);
+			}
+
+			function divided(){
+				let x=document.getElementById('Num1').value;
+				let y=document.getElementById('Num2').value;
+
+				document.getElementById('resultDivid').innerHTML=parseInt(x)/parseInt(y);
+			}
+
+			function clr(){
+				document.getElementById('resultSum').innerHTML="";
+				document.getElementById('resultSub').innerHTML="";
+				document.getElementById('resultMulty').innerHTML="";
+				document.getElementById('resultDivid').innerHTML="";
+				document.getElementById('Num1').value="";
+				document.getElementById('Num2').value="";
+			}
+		</script>
+	</body>
+</html>

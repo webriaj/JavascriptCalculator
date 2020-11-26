@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+h2.title {
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p.riaj {color: bisque;font-size: 25px;font-family: monospace;}
+
+button {
+    width: 150px;
+    padding: 10px 20px;
+    margin: 10px;
+    outline: none;
+    background: transparent;
+    border: 1.8px solid #00f3ff;
+    transition:0.3s;
+    border-radius:8px;
+}
+button:hover{
+    background:#00f3ff;
+    color: black;
+}
+button:focus{
+	outline: none;
+}
+button {
+    font-size: 18px;
+    font-weight: bold;
+    color: cyan;
+}
+
+section.Calculator {
+    background: #000000;
+}
+h2.valueTitle {
+    color: white;
+    font-size: 30px;
+    font-family: math;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+label {
+    color: white;
+    font-size: 20px;
+    font-family: roboto;
+    padding: 8px;
+    width: 155px;
+}
+input {
+    width: 212px;
+    height: 41px;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+p.result {
+    color: white;
+    font-size: 20px;
+    height: 75px;
+    border: 1px solid #0ff;
+    text-align: left;
+    padding: 12px 12px 9px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.result span {
+    color: white;
+    font-size: 30px;
+}
+.riaj span {
+    color: #fb9905;
+    font-weight: bold;
+}
